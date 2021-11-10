@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    >
+
+    <ImageView
+        android:id="@+id/logo_background"
+        android:layout_width="match_parent"
+        android:layout_height="900dp"
+        android:src="@drawable/walkinggem_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.159" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        app:lottie_repeatMode="restart"
+        app:lottie_repeatCount="5"
+        app:lottie_autoPlay="true"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintVertical_bias="0.42"
+        android:id="@+id/walking"
+        app:lottie_rawRes="@raw/walking_man"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_background"
+        app:layout_constraintEnd_toEndOf="@+id/logo_background"
+        app:layout_constraintStart_toStartOf="@+id/logo_background"
+        app:layout_constraintTop_toTopOf="@+id/logo_background"/>
+    <com.airbnb.lottie.LottieAnimationView
+        app:lottie_repeatCount="5"
+        app:lottie_repeatMode="reverse"
+        app:lottie_autoPlay="true"
+        app:layout_constraintVertical_bias="0.09"
+        app:layout_constraintHorizontal_bias="0.7"
+        android:id="@+id/gem1"
+        app:lottie_rawRes="@raw/splash"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_background"
+        app:layout_constraintEnd_toEndOf="@+id/logo_background"
+        app:layout_constraintStart_toStartOf="@+id/logo_background"
+        app:layout_constraintTop_toTopOf="@+id/logo_background" />
+    <com.airbnb.lottie.LottieAnimationView
+        app:lottie_repeatCount="5"
+        app:lottie_repeatMode="reverse"
+        app:lottie_autoPlay="true"
+        app:layout_constraintVertical_bias="0.73"
+        app:layout_constraintHorizontal_bias="0.3"
+        android:id="@+id/gem2"
+        app:lottie_rawRes="@raw/splash"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_background"
+        app:layout_constraintEnd_toEndOf="@+id/logo_background"
+        app:layout_constraintStart_toStartOf="@+id/logo_background"
+        app:layout_constraintTop_toTopOf="@+id/logo_background" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        app:lottie_repeatCount="5"
+        app:lottie_repeatMode="reverse"
+        app:lottie_autoPlay="true"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintHorizontal_bias="0.7"
+        android:id="@+id/gem3"
+        app:lottie_rawRes="@raw/splash"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_background"
+        app:layout_constraintEnd_toEndOf="@+id/logo_background"
+        app:layout_constraintStart_toStartOf="@+id/logo_background"
+        app:layout_constraintTop_toTopOf="@+id/logo_background" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
